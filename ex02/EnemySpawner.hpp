@@ -1,10 +1,12 @@
-// bad_style.cpp: rename everything to the convention, keep behaviour identical
-class enemy_spawner {
+#pragma once
+
+class EnemySpawner {
   public:
-    enemy_spawner(int MaxCount) { COUNT = MaxCount; spawned = 0; }
-    int Spawn(){ if (spawned < COUNT) spawned++; return spawned; }
-    int GetSpawned(){ return spawned; }   // should this be const?
+    EnemySpawner(int maxCount);
+    int spawn();
+    int getSpawned() const;  // it is const because it doesn't mutate, it only reads spawned
+    
   private:
-    int COUNT;
-    int spawned;
+    int m_count;
+    int m_spawned;
 };
