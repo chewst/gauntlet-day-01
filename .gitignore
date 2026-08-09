@@ -1,0 +1,9 @@
+# Object files
+*.o
+*.obj
+
+# Compiled binaries — no extension, since C++ executables on Linux typically have none.
+# This pattern below is too broad (would ignore folders too), so list exercise binaries explicitly instead:
+ex00/vec2
+ex01/timer
+ex02/spawner
