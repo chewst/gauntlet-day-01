@@ -9,7 +9,7 @@ int main() {
     std::cout << "b = (" << b.x() << ", " << b.y() << "), length " << b.length() << '\n';
 
     Vec2 sum = a.plus(b);
-    std::cout << "a + b = ()" <<  sum.x() << ", " <<  sum.y() << ")\n";
+    std::cout << "a + b = (" <<  sum.x() << ", " <<  sum.y() << ")\n";
 
     b.setX(10);
     std::cout << "b now (" <<  b.x() << ", " << b.y() << ") \n";
